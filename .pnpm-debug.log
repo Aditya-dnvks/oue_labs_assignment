@@ -1,0 +1,457 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "authentication-functionality",
+      "private": true,
+      "version": "1.0.0",
+      "engines": {
+        "node": "^10.13 || 12 || 14 || 15",
+        "npm": ">=6"
+      },
+      "dependencies": {
+        "@testing-library/jest-dom": "5.11.9",
+        "@testing-library/react": "11.2.5",
+        "@testing-library/user-event": "12.6.2",
+        "chalk": "4.1.0",
+        "history": "5.0.0",
+        "js-cookie": "2.2.1",
+        "msw": "0.28.1",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "react-router-dom": "5.2.0",
+        "request": "2.88.2"
+      },
+      "devDependencies": {
+        "eslint-config-airbnb": "18.2.1",
+        "eslint-config-prettier": "8.1.0",
+        "eslint-plugin-prettier": "3.3.1",
+        "husky": "4.3.8",
+        "lint-staged": "10.5.4",
+        "npm-run-all": "4.1.5",
+        "prettier": "2.2.1",
+        "react-scripts": "4.0.3"
+      },
+      "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix src/",
+        "format": "prettier --write \"./src\"",
+        "run-all": "npm-run-all --parallel test lint:fix"
+      },
+      "lint-staged": {
+        "*.js": [
+          "npm run lint:fix"
+        ],
+        "*.{js, jsx, json, html, css}": [
+          "npm run format"
+        ]
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "jest": {
+        "collectCoverageFrom": [
+          "src/**/*.js"
+        ]
+      },
+      "browserslist": {
+        "development": [
+          "last 2 chrome versions",
+          "last 2 firefox versions",
+          "last 2 edge versions"
+        ],
+        "production": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 11"
+        ]
+      }
+    },
+    "prefix": "/home/workspace/reactjs/coding-practices/authenticationFunctionality"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": true,
+    "storeDir": "/home/workspace/.pnpm-store/v3",
+    "virtualStoreDir": "/home/workspace/reactjs/coding-practices/authenticationFunctionality/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-airbnb",
+      "rawSpec": "18.2.1"
+    }
+  },
+  "5 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-prettier",
+      "rawSpec": "8.1.0"
+    }
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-prettier",
+      "rawSpec": "3.3.1"
+    }
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/husky/4.3.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "husky",
+      "rawSpec": "4.3.8"
+    }
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lint-staged/10.5.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "lint-staged",
+      "rawSpec": "10.5.4"
+    }
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/npm-run-all/4.1.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "npm-run-all",
+      "rawSpec": "4.1.5"
+    }
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier/2.2.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier",
+      "rawSpec": "2.2.1"
+    }
+  },
+  "11 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-scripts/4.0.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-scripts",
+      "rawSpec": "4.0.3"
+    }
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/jest-dom",
+      "rawSpec": "5.11.9"
+    }
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/user-event",
+      "rawSpec": "12.6.2"
+    }
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/react",
+      "rawSpec": "11.2.5"
+    }
+  },
+  "15 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/chalk/4.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "chalk",
+      "rawSpec": "4.1.0"
+    }
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/history/5.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "history",
+      "rawSpec": "5.0.0"
+    }
+  },
+  "17 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/js-cookie/2.2.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "js-cookie",
+      "rawSpec": "2.2.1"
+    }
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/msw/0.28.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "msw",
+      "rawSpec": "0.28.1"
+    }
+  },
+  "19 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react/17.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react",
+      "rawSpec": "17.0.1"
+    }
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-dom/17.0.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-dom",
+      "rawSpec": "17.0.1"
+    }
+  },
+  "21 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-router-dom/5.2.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-router-dom",
+      "rawSpec": "5.2.0"
+    }
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/request/2.88.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "request",
+      "rawSpec": "2.88.2"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "24 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "25 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "26 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/10.5.4",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "28 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/10.5.4",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "30 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/husky/4.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/husky/4.3.8",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "33 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "34 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "35 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.11.9",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "37 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.6.2",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "39 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-all/4.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "40 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/npm-run-all/4.1.5",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/chalk/4.1.0",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "43 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/history/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/history/5.0.0",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "46 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "48 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.5",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "50 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/msw/0.28.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "52 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/msw/0.28.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "53 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "54 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "55 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/request/2.88.2",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "56 debug pnpm:deprecation": {
+    "deprecated": "request has been deprecated, see https://github.com/request/request/issues/3142",
+    "depth": 0,
+    "pkgId": "registry.npmjs.org/request/2.88.2",
+    "pkgName": "request",
+    "pkgVersion": "2.88.2",
+    "prefix": "/home/workspace/reactjs/coding-practices/authenticationFunctionality"
+  },
+  "57 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/request/2.88.2",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "58 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-router-dom/5.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "59 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-router-dom/5.2.0",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "60 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-cookie/2.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "found_in_store"
+  },
+  "61 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/js-cookie/2.2.1",
+    "requester": "/home/workspace/reactjs/coding-practices/authenticationFunctionality",
+    "status": "resolved"
+  },
+  "62 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "goodreads.db is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npmjs.org/goodreads.db"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "goodreads.db",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/goodreads.db: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmjs.org/goodreads.db: Not Found - 404\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:85815:19)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  }
+}
